@@ -1,0 +1,130 @@
+[
+	// Explorer
+	{
+		"key": "e",
+		"command": "workbench.explorer.fileView.focus",
+		"when": "!editorFocus && !inputFocus"
+	},
+	{
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "shift+a",
+		"command": "explorer.newFolder",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "y",
+		"command": "filesExplorer.copy",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "x",
+		"command": "filesExplorer.cut",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "p",
+		"command": "filesExplorer.paste",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "r",
+		"command": "renameFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "d",
+		"command": "moveFileToTrash",
+		"when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "shift+d",
+		"command": "deleteFile",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "workbench.files.action.collapseExplorerFolders",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "s",
+		"command": "explorer.openToSide",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "f",
+		"command": "revealFileInOS",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "t",
+		"command": "openInTerminal",
+		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+	},
+	{
+		"key": "u",
+		"command": "copyFilePath",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	{
+		"key": "i",
+		"command": "copyRelativeFilePath",
+		"when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+	},
+	// Git
+	{
+		"key": "g",
+		"command": "workbench.scm.focus",
+		"when": "!editorFocus && !inputFocus"
+	},
+	{
+		"key": "o",
+		"command": "workbench.action.focusNextPart",
+		"when": "timelineFollowActiveEditor && !inputFocus"
+	},
+	{
+		"key": "c",
+		"command": "git.timeline.copyCommitId",
+		"when": "timelineFollowActiveEditor && !inputFocus"
+	},
+	// Terminal
+	{
+		"key": "ctrl+m",
+		"command": "workbench.action.toggleMaximizedPanel",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.terminal.scrollDown",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+k",
+		"command": "workbench.action.terminal.scrollUp",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+h",
+		"command": "workbench.action.terminal.scrollDownPage",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+l",
+		"command": "workbench.action.terminal.scrollUpPage",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+n",
+		"command": "workbench.action.terminal.focusNext",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "ctrl+shift+n",
+		"command": "workbench.action.terminal.focusPrevious",
+		"when": "terminalFocus && terminalProcessSupported"
+	}
+]
