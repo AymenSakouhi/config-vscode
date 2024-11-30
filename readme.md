@@ -46,3 +46,6 @@ P: # Paste before cursor
 "+p: # Paste from clipboard
 :reg: # Show registers
 "+number + p: # Paste from register number
+
+
+testing out a new block of code
